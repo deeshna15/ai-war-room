@@ -1,0 +1,16 @@
+[
+  {"date": "Day 1", "dau": 15000, "api_latency_p95_ms": 120, "payment_success_rate": 0.98, "support_tickets": 45, "crash_rate": 0.001, "activation_conversion": 0.40},
+  {"date": "Day 2", "dau": 15200, "api_latency_p95_ms": 118, "payment_success_rate": 0.98, "support_tickets": 42, "crash_rate": 0.001, "activation_conversion": 0.41},
+  {"date": "Day 3", "dau": 15150, "api_latency_p95_ms": 122, "payment_success_rate": 0.97, "support_tickets": 50, "crash_rate": 0.002, "activation_conversion": 0.39},
+  {"date": "Day 4", "dau": 15400, "api_latency_p95_ms": 121, "payment_success_rate": 0.98, "support_tickets": 48, "crash_rate": 0.001, "activation_conversion": 0.42},
+  {"date": "Day 5", "dau": 15600, "api_latency_p95_ms": 119, "payment_success_rate": 0.98, "support_tickets": 41, "crash_rate": 0.001, "activation_conversion": 0.41},
+  {"date": "Day 6", "dau": 15500, "api_latency_p95_ms": 115, "payment_success_rate": 0.99, "support_tickets": 39, "crash_rate": 0.001, "activation_conversion": 0.43},
+  {"date": "Day 7", "dau": 15800, "api_latency_p95_ms": 120, "payment_success_rate": 0.98, "support_tickets": 43, "crash_rate": 0.001, "activation_conversion": 0.40},
+  {"date": "Day 8", "dau": 16000, "api_latency_p95_ms": 124, "payment_success_rate": 0.97, "support_tickets": 46, "crash_rate": 0.002, "activation_conversion": 0.41},
+  {"date": "Day 9", "dau": 16100, "api_latency_p95_ms": 125, "payment_success_rate": 0.98, "support_tickets": 51, "crash_rate": 0.001, "activation_conversion": 0.42},
+  {"date": "Day 10 (Launch)", "dau": 16500, "api_latency_p95_ms": 350, "payment_success_rate": 0.85, "support_tickets": 150, "crash_rate": 0.005, "activation_conversion": 0.38},
+  {"date": "Day 11", "dau": 16200, "api_latency_p95_ms": 410, "payment_success_rate": 0.81, "support_tickets": 280, "crash_rate": 0.006, "activation_conversion": 0.35},
+  {"date": "Day 12", "dau": 15800, "api_latency_p95_ms": 480, "payment_success_rate": 0.77, "support_tickets": 420, "crash_rate": 0.008, "activation_conversion": 0.30},
+  {"date": "Day 13", "dau": 15100, "api_latency_p95_ms": 520, "payment_success_rate": 0.72, "support_tickets": 610, "crash_rate": 0.012, "activation_conversion": 0.25},
+  {"date": "Day 14", "dau": 14500, "api_latency_p95_ms": 610, "payment_success_rate": 0.68, "support_tickets": 850, "crash_rate": 0.015, "activation_conversion": 0.21}
+]

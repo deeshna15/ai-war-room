@@ -1,0 +1,16 @@
+# RELEASE NOTES: One-Click Checkout V2
+
+**Date:** Day 10
+**Feature Description:** 
+We are rolling out "One-Click Checkout V2" to 100% of the user base. This update introduces a brand new, streamlined UI for the checkout process, designed to reduce click-through steps from 5 to 1.
+
+**Architecture Changes:**
+To support this, we migrated our payment processing to a new upstream API Gateway routing layer. This layer aggregates inventory checks, card authorization, and user profile data in parallel before committing the transaction.
+
+**Known Risks & Warnings:**
+- *Latency Sensitivity*: Aggregating requests in the new gateway is CPU intensive. Load testing up to 100 requests/sec passed, but sustained load may cause CPU starvation and gateway timeouts (504/502).
+- *Downstream Impacts*: If the gateway times out, the client app does not have robust retry mechanisms yet, potentially leading to abandoned carts or duplicate charges if users aggressively retry their checkout.
+- *Support Capacity*: Support is operating at standard tier, not escalated. 
+
+**Rollback Procedure:**
+The feature flag `flag_checkout_v2_enabled` can be flipped to 'false' via LaunchDarkly to instantly route traffic back to the V1 system and bypass the new API Gateway.

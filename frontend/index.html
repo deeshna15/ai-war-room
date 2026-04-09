@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurpleMerit | War Room Simulator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="pulse-ring"></div>
+                <h1>PurpleMerit <span>War Room</span></h1>
+            </div>
+            <button id="start-btn" class="btn-primary">Initialize Protocol</button>
+        </header>
+
+        <main class="dashboard">
+            <!-- Left Side: Data Dashboard -->
+            <section class="panel data-panel">
+                <h2>Real-time Dashboard</h2>
+                <div class="stats-grid">
+                    <div id="card-latency" class="stat-card">
+                        <h3>API Latency (p95)</h3>
+                        <div id="val-latency" class="value">--</div>
+                        <div id="trend-latency" class="trend">Initializing...</div>
+                    </div>
+                    <div id="card-success" class="stat-card">
+                        <h3>Payment Success</h3>
+                        <div id="val-success" class="value">--</div>
+                        <div id="trend-success" class="trend">Initializing...</div>
+                    </div>
+                    <div id="card-tickets" class="stat-card">
+                        <h3>Support Tickets</h3>
+                        <div id="val-tickets" class="value">--</div>
+                        <div id="trend-tickets" class="trend">Initializing...</div>
+                    </div>
+                </div>
+                
+                <div class="context-area">
+                    <div class="context-box release-notes">
+                        <h3>Launch Context</h3>
+                        <p><strong>Feature:</strong> One-Click Checkout V2</p>
+                        <p><strong>Status:</strong> Rolled out 100% on Day 10</p>
+                        <p><strong>Risk:</strong> CPU starvation on Gateway Routing</p>
+                    </div>
+                    <div class="context-box active-issues">
+                        <h3>Latest Feedback Sample</h3>
+                        <ul class="marquee-list" id="feedback-list">
+                            <li>Connecting to telemetry streams...</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Side: Agent Traces -->
+            <section class="panel trace-panel">
+                <h2>Simulation Comms Channel</h2>
+                <div id="chat-container" class="chat-container">
+                   <div class="placeholder-msg">Awaiting initialization... System offline.</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Final Decision Modal/Overlay -->
+        <div id="decision-modal" class="modal hidden">
+            <div class="modal-content glass">
+                <div class="modal-header">
+                    <h2>Final Launch Decision</h2>
+                    <span id="decision-badge" class="badge">PENDING</span>
+                </div>
+                <div class="modal-body">
+                    <div class="section">
+                        <h3>Rationale</h3>
+                        <p id="decision-rationale"></p>
+                    </div>
+                    
+                    <div class="split-section">
+                        <div class="section">
+                            <h3>Action Plan (24-48h)</h3>
+                            <ul id="action-plan-list"></ul>
+                        </div>
+                        <div class="section">
+                            <h3>Risk Register</h3>
+                            <ul id="risk-list"></ul>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>Communication Plan</h3>
+                        <div class="comm-block">
+                            <strong>Internal:</strong> <span id="comm-internal"></span><br>
+                            <strong>External:</strong> <span id="comm-external"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="confidence">
+                        Confidence Score: <span id="confidence-score"></span>/100
+                    </div>
+                </div>
+                <button class="btn-close" onclick="closeModal()">Acknowledge</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Dependencies for SSE -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

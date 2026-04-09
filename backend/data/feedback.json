@@ -1,0 +1,22 @@
+[
+  {"id": 1, "sentiment": "negative", "text": "I tried to pay for my subscription 3 times and it kept spinning."},
+  {"id": 2, "sentiment": "negative", "text": "App is so slow since the update yesterday."},
+  {"id": 3, "sentiment": "positive", "text": "The new checkout screen looks really sleek!"},
+  {"id": 4, "sentiment": "negative", "text": "Can't complete payment. Error 502."},
+  {"id": 5, "sentiment": "negative", "text": "My card was charged but it says failed? Please help ASAP!"},
+  {"id": 6, "sentiment": "neutral", "text": "Where is the old payment method?"},
+  {"id": 7, "sentiment": "negative", "text": "Terrible experience, stuck on processing."},
+  {"id": 8, "sentiment": "negative", "text": "Nothing works. Getting a timeout every time I enter my shipping address."},
+  {"id": 9, "sentiment": "positive", "text": "Love the dark mode on the new checkout."},
+  {"id": 10, "sentiment": "negative", "text": "Gateway timeout error when checking out."},
+  {"id": 11, "sentiment": "negative", "text": "Is the system down? I can't finalize my order."},
+  {"id": 12, "sentiment": "negative", "text": "Loading times are ridiculous right now."},
+  {"id": 13, "sentiment": "neutral", "text": "Just updated, UI is okay but seems sluggish."},
+  {"id": 14, "sentiment": "negative", "text": "Took 5 minutes to submit my order. Unacceptable."},
+  {"id": 15, "sentiment": "negative", "text": "Double charged because I clicked twice when it froze!"},
+  {"id": 16, "sentiment": "positive", "text": "Wow, 1 click checkout actually worked for me, very fast."},
+  {"id": 17, "sentiment": "negative", "text": "My basket emptied when the payment failed."},
+  {"id": 18, "sentiment": "negative", "text": "Please fix your app, payment gateway is dead."},
+  {"id": 19, "sentiment": "negative", "text": "Getting a 504 Gateway Timeout error."},
+  {"id": 20, "sentiment": "negative", "text": "Support not answering right away, payment failed 4 times."}
+]
